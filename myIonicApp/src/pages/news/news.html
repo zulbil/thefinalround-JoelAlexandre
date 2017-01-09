@@ -1,0 +1,36 @@
+<!--
+  Generated template for the News page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Actualités</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<!-- <ion-content padding>
+	
+	 <ion-list>
+
+		<ion-item *ngFor="let article of articles">
+			<ion-thumbnail *ngIf="article.picture" item-left>
+				<img src="{{article.picture}}">
+			</ion-thumbnail>
+			<h2>{{article.title}}</h2>
+		</ion-item> 
+	</ion-list> 
+
+</ion-content> -->
+
+<ion-content class="card-background-page">
+	
+	<ion-card *ngFor="let article of articles">
+		<img src="{{article.picture}}"/>
+		<div class="card-title">{{article.title}}</div>
+		<ion-icon ios="ios-eye" md="ios-eye-outline" (click)="viewNews(article)"></ion-icon>
+	</ion-card>
+</ion-content>
