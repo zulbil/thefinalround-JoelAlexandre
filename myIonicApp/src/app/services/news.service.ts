@@ -14,7 +14,7 @@ import 'rxjs/Rx';
 		}
 
 		getNews(){
-			return this.http.get(this.baseUrl+'/news').map(res => res.json()); 
+			return this.http.get(this.baseUrl+'/api/news').map(res => res.json()); 
 		}
 	
 }
