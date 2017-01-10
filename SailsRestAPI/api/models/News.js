@@ -12,7 +12,10 @@ module.exports = {
       type: "string"
     },
     date: {
-      type: "date"
+      type: "date", 
+      defaultsTo: function(){
+        return date.now(); 
+      }
     },
     description: { type: "string"},
     picture : {type: "string"}

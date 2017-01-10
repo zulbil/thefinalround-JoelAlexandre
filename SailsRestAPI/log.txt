@@ -1,0 +1,101 @@
+2017-01-09T21:21:55.950695+00:00 app[web.1]:     at Pool.g (events.js:291:16)
+2017-01-09T21:21:55.950696+00:00 app[web.1]:     at emitTwo (events.js:106:13)
+2017-01-09T21:21:55.950697+00:00 app[web.1]:     at Connection.g (events.js:291:16)
+2017-01-09T21:21:55.950698+00:00 app[web.1]:     at emitTwo (events.js:106:13)
+2017-01-09T21:21:55.950699+00:00 app[web.1]:     at Connection.emit (events.js:191:7)
+2017-01-09T21:21:55.950699+00:00 app[web.1]:     at Socket.<anonymous> (/app/node_modules/sails-mongo/node_modules/mongodb-core/lib/connection/connection.js:154:93)
+2017-01-09T21:21:55.950701+00:00 app[web.1]:     at emitOne (events.js:96:13)
+2017-01-09T21:21:55.950692+00:00 app[web.1]:     at emitTwo (events.js:106:13)
+2017-01-09T21:21:55.950702+00:00 app[web.1]:     at emitErrorNT (net.js:1276:8)
+2017-01-09T21:21:55.950696+00:00 app[web.1]:     at Pool.emit (events.js:191:7)
+2017-01-09T21:21:55.950697+00:00 app[web.1]:     at Connection.<anonymous> (/app/node_modules/sails-mongo/node_modules/mongodb-core/lib/connection/pool.js:119:12)
+2017-01-09T21:21:55.950700+00:00 app[web.1]:     at Socket.g (events.js:291:16)
+2017-01-09T21:21:55.950701+00:00 app[web.1]:     at Socket.emit (events.js:188:7)
+2017-01-09T21:22:15.423173+00:00 heroku[web.1]: State changed from starting to crashed
+2017-01-09T21:22:15.420963+00:00 heroku[web.1]: Process exited with status 0
+2017-01-09T22:50:04.559899+00:00 heroku[web.1]: State changed from crashed to starting
+2017-01-09T22:50:08.892648+00:00 heroku[web.1]: Starting process with command `node app.js`
+2017-01-09T22:50:12.633267+00:00 app[web.1]: Warning: connect.session() MemoryStore is not
+2017-01-09T22:50:12.633282+00:00 app[web.1]: designed for a production environment, as it will leak
+2017-01-09T22:50:12.633283+00:00 app[web.1]: memory, and will not scale past a single process.
+2017-01-09T22:50:12.944587+00:00 app[web.1]: 
+2017-01-09T22:50:12.944613+00:00 app[web.1]: A project-wide `sails.config.models.migrate` setting has not been configured for this app.
+2017-01-09T22:50:13.011849+00:00 app[web.1]:  Error details:
+2017-01-09T22:50:13.011851+00:00 app[web.1]:     at Object.exports._errnoException (util.js:1026:11)
+2017-01-09T22:50:13.011851+00:00 app[web.1]:     at exports._exceptionWithHostPort (util.js:1049:20)
+2017-01-09T22:50:13.011850+00:00 app[web.1]: { Error: connect ECONNREFUSED 127.0.0.1:27017
+2017-01-09T22:50:12.944622+00:00 app[web.1]: Since the NODE_ENV env variable is set to "production", auto-migration will be disabled automatically.
+2017-01-09T22:50:12.944636+00:00 app[web.1]: (i.e. `migrate: 'safe'`)
+2017-01-09T22:50:13.003609+00:00 app[web.1]: A hook (`orm`) failed to load!
+2017-01-09T22:50:13.011846+00:00 app[web.1]: Error: Failed to connect to MongoDB.  Are you sure your configured Mongo instance is running?
+2017-01-09T22:50:13.011852+00:00 app[web.1]:     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1085:14)
+2017-01-09T22:50:13.011860+00:00 app[web.1]:     at Server.emit (events.js:191:7)
+2017-01-09T22:50:13.011854+00:00 app[web.1]:     at _createError (/app/node_modules/sails-mongo/lib/adapter.js:118:23)
+2017-01-09T22:50:13.011856+00:00 app[web.1]:     at /app/node_modules/sails-mongo/lib/connection.js:25:20
+2017-01-09T22:50:13.011856+00:00 app[web.1]:     at /app/node_modules/sails-mongo/node_modules/mongodb/lib/mongo_client.js:238:20
+2017-01-09T22:50:13.011862+00:00 app[web.1]:     at Pool.g (events.js:291:16)
+2017-01-09T22:50:13.011869+00:00 app[web.1]:     at Socket.emit (events.js:188:7)
+2017-01-09T22:50:13.011853+00:00 app[web.1]:   name: 'MongoError',
+2017-01-09T22:50:13.011857+00:00 app[web.1]:     at /app/node_modules/sails-mongo/node_modules/mongodb/lib/db.js:242:14
+2017-01-09T22:50:13.011859+00:00 app[web.1]:     at Server.g (events.js:291:16)
+2017-01-09T22:50:13.011862+00:00 app[web.1]:     at Pool.<anonymous> (/app/node_modules/sails-mongo/node_modules/mongodb-core/lib/topologies/server.js:218:12)
+2017-01-09T22:50:13.011866+00:00 app[web.1]:     at emitTwo (events.js:106:13)
+2017-01-09T22:50:13.011854+00:00 app[web.1]:   message: 'connect ECONNREFUSED 127.0.0.1:27017' }
+2017-01-09T22:50:13.011855+00:00 app[web.1]:     at /app/node_modules/sails-mongo/lib/adapter.js:121:13
+2017-01-09T22:50:13.011860+00:00 app[web.1]:     at emitTwo (events.js:106:13)
+2017-01-09T22:50:13.011858+00:00 app[web.1]:     at Server.<anonymous> (/app/node_modules/sails-mongo/node_modules/mongodb/lib/server.js:228:9)
+2017-01-09T22:50:13.011863+00:00 app[web.1]:     at emitTwo (events.js:106:13)
+2017-01-09T22:50:13.011864+00:00 app[web.1]:     at Connection.<anonymous> (/app/node_modules/sails-mongo/node_modules/mongodb-core/lib/connection/pool.js:119:12)
+2017-01-09T22:50:13.011864+00:00 app[web.1]:     at Pool.emit (events.js:191:7)
+2017-01-09T22:50:13.011865+00:00 app[web.1]:     at Connection.g (events.js:291:16)
+2017-01-09T22:50:13.011866+00:00 app[web.1]:     at Connection.emit (events.js:191:7)
+2017-01-09T22:50:13.011868+00:00 app[web.1]:     at Socket.g (events.js:291:16)
+2017-01-09T22:50:13.011870+00:00 app[web.1]:     at emitErrorNT (net.js:1276:8)
+2017-01-09T22:50:13.011867+00:00 app[web.1]:     at Socket.<anonymous> (/app/node_modules/sails-mongo/node_modules/mongodb-core/lib/connection/connection.js:154:93)
+2017-01-09T22:50:13.011869+00:00 app[web.1]:     at emitOne (events.js:96:13)
+2017-01-09T22:50:32.611728+00:00 heroku[web.1]: State changed from starting to crashed
+2017-01-09T22:50:32.577792+00:00 heroku[web.1]: Process exited with status 0
+2017-01-10T01:40:00.175663+00:00 heroku[web.1]: State changed from crashed to starting
+2017-01-10T01:40:04.662685+00:00 heroku[web.1]: Starting process with command `node app.js`
+2017-01-10T01:40:08.077314+00:00 app[web.1]: Warning: connect.session() MemoryStore is not
+2017-01-10T01:40:08.077326+00:00 app[web.1]: designed for a production environment, as it will leak
+2017-01-10T01:40:08.077327+00:00 app[web.1]: memory, and will not scale past a single process.
+2017-01-10T01:40:08.324062+00:00 app[web.1]: 
+2017-01-10T01:40:08.324311+00:00 app[web.1]: A project-wide `sails.config.models.migrate` setting has not been configured for this app.
+2017-01-10T01:40:08.324444+00:00 app[web.1]: Since the NODE_ENV env variable is set to "production", auto-migration will be disabled automatically.
+2017-01-10T01:40:08.324488+00:00 app[web.1]: (i.e. `migrate: 'safe'`)
+2017-01-10T01:40:08.376557+00:00 app[web.1]: A hook (`orm`) failed to load!
+2017-01-10T01:40:08.384252+00:00 app[web.1]: { Error: connect ECONNREFUSED 127.0.0.1:27017
+2017-01-10T01:40:08.384255+00:00 app[web.1]:   name: 'MongoError',
+2017-01-10T01:40:08.384249+00:00 app[web.1]: Error: Failed to connect to MongoDB.  Are you sure your configured Mongo instance is running?
+2017-01-10T01:40:08.384251+00:00 app[web.1]:  Error details:
+2017-01-10T01:40:08.384253+00:00 app[web.1]:     at Object.exports._errnoException (util.js:1026:11)
+2017-01-10T01:40:08.384253+00:00 app[web.1]:     at exports._exceptionWithHostPort (util.js:1049:20)
+2017-01-10T01:40:08.384254+00:00 app[web.1]:     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1085:14)
+2017-01-10T01:40:08.384256+00:00 app[web.1]:     at _createError (/app/node_modules/sails-mongo/lib/adapter.js:118:23)
+2017-01-10T01:40:08.384255+00:00 app[web.1]:   message: 'connect ECONNREFUSED 127.0.0.1:27017' }
+2017-01-10T01:40:08.384256+00:00 app[web.1]:     at /app/node_modules/sails-mongo/lib/adapter.js:121:13
+2017-01-10T01:40:08.384259+00:00 app[web.1]:     at emitTwo (events.js:106:13)
+2017-01-10T01:40:08.384257+00:00 app[web.1]:     at /app/node_modules/sails-mongo/lib/connection.js:25:20
+2017-01-10T01:40:08.384257+00:00 app[web.1]:     at /app/node_modules/sails-mongo/node_modules/mongodb/lib/mongo_client.js:238:20
+2017-01-10T01:40:08.384257+00:00 app[web.1]:     at /app/node_modules/sails-mongo/node_modules/mongodb/lib/db.js:242:14
+2017-01-10T01:40:08.384258+00:00 app[web.1]:     at Server.<anonymous> (/app/node_modules/sails-mongo/node_modules/mongodb/lib/server.js:228:9)
+2017-01-10T01:40:08.384259+00:00 app[web.1]:     at Server.g (events.js:291:16)
+2017-01-10T01:40:08.384259+00:00 app[web.1]:     at Server.emit (events.js:191:7)
+2017-01-10T01:40:08.384260+00:00 app[web.1]:     at Pool.<anonymous> (/app/node_modules/sails-mongo/node_modules/mongodb-core/lib/topologies/server.js:218:12)
+2017-01-10T01:40:08.384261+00:00 app[web.1]:     at Pool.g (events.js:291:16)
+2017-01-10T01:40:08.384261+00:00 app[web.1]:     at emitTwo (events.js:106:13)
+2017-01-10T01:40:08.384261+00:00 app[web.1]:     at Pool.emit (events.js:191:7)
+2017-01-10T01:40:08.384262+00:00 app[web.1]:     at Connection.<anonymous> (/app/node_modules/sails-mongo/node_modules/mongodb-core/lib/connection/pool.js:119:12)
+2017-01-10T01:40:08.384262+00:00 app[web.1]:     at Connection.g (events.js:291:16)
+2017-01-10T01:40:08.384263+00:00 app[web.1]:     at Connection.emit (events.js:191:7)
+2017-01-10T01:40:08.384262+00:00 app[web.1]:     at emitTwo (events.js:106:13)
+2017-01-10T01:40:08.384264+00:00 app[web.1]:     at Socket.g (events.js:291:16)
+2017-01-10T01:40:08.384263+00:00 app[web.1]:     at Socket.<anonymous> (/app/node_modules/sails-mongo/node_modules/mongodb-core/lib/connection/connection.js:154:93)
+2017-01-10T01:40:08.384264+00:00 app[web.1]:     at emitOne (events.js:96:13)
+2017-01-10T01:40:08.384265+00:00 app[web.1]:     at Socket.emit (events.js:188:7)
+2017-01-10T01:40:08.384265+00:00 app[web.1]:     at emitErrorNT (net.js:1276:8)
+2017-01-10T01:40:28.019139+00:00 heroku[web.1]: State changed from starting to crashed
+2017-01-10T01:40:28.008807+00:00 heroku[web.1]: Process exited with status 0
+2017-01-10T03:13:56.865260+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=joelalexandre-api.herokuapp.com request_id=e3abaa7f-131e-4875-87f3-f0fa2a525fe3 fwd="197.0.99.152" dyno= connect= service= status=503 bytes=
+2017-01-10T03:13:57.396059+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=joelalexandre-api.herokuapp.com request_id=15b9ed69-9276-4a38-bc4c-0b4c43131ced fwd="197.0.99.152" dyno= connect= service= status=503 bytes=

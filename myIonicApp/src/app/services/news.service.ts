@@ -10,7 +10,7 @@ import 'rxjs/Rx';
 
 		constructor(http:Http){
 			this.http = http; 
-			this.baseUrl = 'http://localhost:1337'; 
+			this.baseUrl = 'https://joelalexandre-api.herokuapp.com'; 
 		}
 
 		getNews(){
