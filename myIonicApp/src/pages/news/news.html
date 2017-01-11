@@ -7,30 +7,32 @@
 <ion-header>
 
   <ion-navbar color="primary">
-    <ion-title>Actualités</ion-title>
+    <ion-title>News</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-<!-- <ion-content padding>
-	
-	 <ion-list>
+<ion-content class="cards-bg">
 
-		<ion-item *ngFor="let article of articles">
-			<ion-thumbnail *ngIf="article.picture" item-left>
-				<img src="{{article.picture}}">
-			</ion-thumbnail>
-			<h2>{{article.title}}</h2>
-		</ion-item> 
-	</ion-list> 
+  <ion-card *ngFor="let article of articles">
 
-</ion-content> -->
+    <img src="{{article.picture}}"/>
 
-<ion-content class="card-background-page">
-	
-	<ion-card *ngFor="let article of articles">
-		<img src="{{article.picture}}"/>
-		<div class="card-title">{{article.title}}</div>
-		<ion-icon ios="ios-eye" md="ios-eye-outline" (click)="viewNews(article)"></ion-icon>
-	</ion-card>
-</ion-content>
+    <ion-card-content>
+      <ion-card-title text-center>
+        {{article.title}}
+      </ion-card-title>
+      
+    </ion-card-content>
+
+    <ion-row no-padding>
+ 
+      <ion-col text-center>
+        <button ion-button clear small color="primary" icon-left (click)="viewNews(article)">
+          <ion-icon name='open'></ion-icon>
+          Read the article
+        </button>
+      </ion-col>
+    </ion-row>
+   </ion-card>
+ </ion-content>

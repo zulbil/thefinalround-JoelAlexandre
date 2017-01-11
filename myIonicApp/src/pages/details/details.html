@@ -13,20 +13,25 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
 
-	<ion-card>
-		
-		<ion-item>
-			Publié le {{article.date | date:"fullDate"}}
+  <ion-card>
+  	<ion-item>
+		 {{article.date | date:"fullDate"}}
 		</ion-item> 
 
-		<img src="{{article.picture}}"/>
+    <img src="{{article.picture}}"/>
 
-		<ion-card-content>
-			<p>{{article.description}}</p>
-		</ion-card-content>
+    <ion-card-content>
+      <ion-card-title>
+        {{article.title}}
+      </ion-card-title>
+      <p>
+        {{article.description}}
+      </p>
+    </ion-card-content>
 
-	</ion-card>
+  </ion-card>
 
 </ion-content>
+
